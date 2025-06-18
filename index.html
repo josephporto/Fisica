@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Tensiones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚙️ Calculadora de Tensiones</h1>
+      <h2>por Joseph Muñoz</h2>
+    </header>
+
+    <main>
+      <section class="formulario">
+        <form>
+          <label>Ángulo A (°)</label>
+          <input 
+            type="number" 
+            name="anguloA" 
+            required 
+            step="any" 
+            placeholder="56.3">
+
+          <label>Ángulo B (°)</label>
+          <input 
+            type="number" 
+            name="anguloB" 
+            required 
+            step="any" 
+            placeholder="30.5">
+
+          <label>Masa (kg)</label>
+          <input 
+            type="number" 
+            name="masa" 
+            required 
+            step="any" 
+            placeholder="2.75">
+
+          <button type="submit">Calcular</button>
+        </form>
+
+        <div class="resultados" style="display: none;"></div>
+        <div class="error"></div>
+      </section>
+
+      <section class="grafico">
+        <canvas id="canvas" width="400" height="400"></canvas>
+      </section>
+    </main>
+
+    <footer>
+      <p>Joseph Muñoz © 2025 | <a href="https://www.instagram.com/_joosephhhh/" target="_blank">@_joosephhhh</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

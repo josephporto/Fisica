@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f2027;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #00d4ff;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #66fcf1;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formulario {
+  flex: 1;
+  min-width: 300px;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #00d4ff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #00a6c2;
+}
+
+.resultados {
+  margin-top: 20px;
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #00d4ff;
+}
+
+.error {
+  margin-top: 20px;
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+.grafico {
+  flex: 1;
+  text-align: center;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.grafico canvas {
+  border: 2px solid #00d4ff;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+footer a {
+  color: #00d4ff;
+  text-decoration: none;
+}
